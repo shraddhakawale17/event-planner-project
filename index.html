@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      src="https://kit.fontawesome.com/64b4f5a37c.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Playwrite+AU+VIC+Guides&family=Playwrite+IE+Guides&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <title>Event Planner</title>
+
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Playwrite+AU+VIC+Guides&family=Playwrite+CO+Guides&family=Playwrite+IE+Guides&family=Yatra+One&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;500;600;700&display=swap");
+  </style>
+  <style>
+    .navbar {
+      background-image: url("././image/home_img/flower_poster.jpg");
+      position: relative;
+    }
+
+    .navbar ul {
+      position: relative;
+      top: 150px;
+    }
+    .navbar img {
+      height: 150px;
+      padding-left: 10px;
+      position: relative;
+      bottom: 10px;
+      left: 10px;
+    }
+    .navbar ul li {
+      padding: 10px;
+      display: flex;
+      align-items: center;
+    }
+    .navbar ul {
+      display: flex;
+      justify-content: center;
+      position: relative;
+      justify-content: space-evenly;
+      list-style-type: none;
+      color: #088179bd;
+      font-size: 25px;
+      font-family: "crimson Pro";
+      padding-top: 15px;
+      cursor: pointer;
+      transition: 0.3s;
+      font-weight: 600;
+    }
+    .navbar ul li:hover {
+      transition: 0.2s;
+      padding: 7px;
+      font-size: 27px;
+      text-decoration: underline;
+      text-underline-offset: 7px;
+      text-decoration-thickness: 3px;
+      color: #088178;
+    }
+
+    .container-1 {
+      display: flex;
+      height: 620px;
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+    }
+    .container {
+      display: flex;
+      margin-top: 25px;
+      width: 68%;
+      height: 450px;
+      display: flex;
+      justify-content: center;
+
+      gap: 50px;
+      position: relative;
+      top: 130px;
+    }
+    .container img {
+      width: 20%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+      transition: all ease-in-out 0.5s;
+    }
+    .container img:hover {
+      width: 40%;
+    }
+    .box {
+      display: flex;
+      height: 500px;
+      width: 70%;
+      border: 1px solid rgba(0, 0, 0, 0.135);
+      margin-top: 50px;
+      margin-left: 50px;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      flex-wrap: wrap;
+      background-color: #4edcd312;
+      box-shadow: 2px 2px 5px;
+      cursor: pointer;
+      transition: 0.9s;
+    }
+    .box:hover {
+      transition: box-shaow 0.9s;
+      box-shadow: 5px 7px 12px;
+    }
+    .box h1 {
+      font-size: 100px;
+      position: absolute;
+      top: 10px;
+      display: flex;
+      justify-content: center;
+      font-size: 50px;
+      margin: 0;
+      z-index: 1;
+      transition: box-shadow 0.3s;
+      cursor: pointer;
+    }
+    .box h1:hover {
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+    .inner-box {
+      display: flex;
+      height: 400px;
+      width: 40%;
+      border: 1px solid rgb(0, 0, 0);
+      position: relative;
+      left: 400px;
+      top: 150px;
+      background-image: url("./image/home_img/p1.jpg");
+      background-size: cover;
+      background-position: center;
+      box-shadow: inset 0 0 0 10px rgb(255, 255, 255);
+      transition: 0.3s;
+    }
+    .inner-box:hover {
+      transition: all ease-in-out 0.5s;
+      filter: brightness(0.7);
+    }
+    .header {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 10px;
+    }
+    @font-face {
+      font-family: myfont;
+      src: url("./fonts/font.otf");
+    }
+    #H1 {
+      font-size: 50px;
+      font-family: "myfont", sans-serif;
+      font-weight: 900;
+      word-spacing: 10px;
+      color: #ccaf66;
+    }
+    #H2 {
+      font-size: 15px;
+      line-height: 20px;
+      font-family: "Crimson Pro", serif;
+      word-spacing: 4px;
+      color: #ccaf66;
+      word-spacing: 8px;
+    }
+    #H3 {
+      display: flex;
+      padding-top: 60px;
+      padding-left: 20px;
+      margin-right: 180px;
+      position: absolute;
+      top: 40px;
+      font-weight: 600;
+      font-family: "Crimson Pro", serif;
+      line-height: 25px;
+    }
+    .job {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      top: 100px;
+      right: 100px;
+      font-family: "Crimson Pro", serif;
+      color: rgba(0, 0, 0, 0.68);
+    }
+    .job h2 {
+      line-height: 50px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .job h2:hover {
+      color: rgba(0, 0, 0, 0.877);
+    }
+    .back-img {
+      height: 400px;
+      width: 400px;
+      background-size: cover;
+      background-position: center;
+      position: absolute;
+      left: 90%;
+      margin-left: 50px;
+      bottom: 130px;
+      background-image: url("image/home_img/p2.jpg");
+      box-shadow: inset 0 0 0 10px rgb(255, 255, 255);
+      border: 1px solid rgb(0, 0, 0);
+      transition: 0.3s;
+    }
+
+    .back-img:hover {
+      transition: all ease-in-out 0.5s;
+      filter: brightness(0.7);
+    }
+    /* phone */
+    @media (max-width: 600px) {
+      .navbar ul li {
+        display: none;
+      }
+      .top input {
+        display: none;
+      }
+      #nav-pop {
+        background-color: rgba(198, 139, 61, 0.694);
+        position: fixed;
+        margin-top: 45px;
+        height: 100vh;
+        width: 150px;
+        font-size: 25px;
+        list-style-type: none;
+        line-height: 100px;
+        border: 1px solid black;
+        padding-left: 10px;
+        font-weight: 600;
+        border: none;
+        font-family: "crimson Pro";
+      }
+      .burger {
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        z-index: 1000;
+      }
+
+      .burger button {
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 5px;
+      }
+
+      .burger img {
+        height: 25px;
+        width: 25px;
+      }
+      #login {
+        margin-right: 20px;
+      }
+      #search-icon {
+        margin-left: 15px;
+      }
+      .top label {
+        padding-left: 10px;
+        font-size: 14px;
+        font-weight: 600;
+      }
+      #search-icon {
+        display: none;
+      }
+      .poster img {
+        display: none;
+      }
+      /* poster */
+      .container-1 {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        top: 130px;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 90%;
+        height: 200px;
+        border-radius: 10px 10px 10px 10px;
+        overflow: hidden;
+        position: relative;
+        padding-bottom: 100px;
+        top: 20px;
+        background-size: cover;
+        background-position: center;
+        animation: backgroundChange 25s infinite;
+      }
+      @keyframes backgroundChange {
+        0%,
+        17% {
+          background-image: url("./image/home_img/img1.jpeg");
+        }
+        20%,
+        33% {
+          background-image: url("./image/home_img/img2.jpeg");
+        }
+        40%,
+        48% {
+          background-image: url("./image/home_img/img3.jpg");
+        }
+        60%,
+        65% {
+          background-image: url("./image/home_img/img4.jpeg");
+        }
+        80%,
+        81% {
+          background-image: url("./image/home_img/img5.jpeg");
+        }
+        100%,
+        100% {
+          background-image: url("./image/home_img/img6.jpeg");
+        }
+      }
+      .container img {
+        display: none;
+      }
+
+      /* heading */
+      .header {
+        position: relative;
+        top: 180px;
+      }
+      #H1 {
+        font-size: 25px;
+        position: absolute;
+      }
+      #H2 {
+        position: absolute;
+        top: 10px;
+        margin: 5px;
+        word-spacing: 5px;
+      }
+
+      /* carrier */
+      .box {
+        display: none;
+      }
+      .carrier-phone {
+        height: 500px;
+        width: 100%;
+        position: relative;
+        top: 250px;
+      }
+      .cont {
+        height: 90%;
+        width: 90%;
+        display: flex;
+        margin: 25px;
+        position: absolute;
+        background-color: #4edcd312;
+        box-shadow: 2px 2px 5px;
+        cursor: pointer;
+        transition: all 0.9s ease;
+        border: 1px solid rgba(0, 0, 0, 0.135);
+        justify-content: center;
+        flex-direction: column;
+      }
+      .cont:hover {
+        transform: scale(1.05);
+        box-shadow: 5px 7px 12px rgba(0, 0, 0, 0.5);
+      }
+
+      .cont h1 {
+        font-family: "myfont", sans-serif;
+        font-size: 30px;
+        position: absolute;
+        top: 5px;
+        left: 25%;
+        color: #ccaf66;
+        transition: color 0.5s ease;
+      }
+      .cont h1:hover {
+        color: #e0a84d;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      }
+
+      .cont h2 {
+        display: flex;
+        flex-direction: column;
+        line-height: 60px;
+        padding-left: 30px;
+        transition: transform 0.5s ease, color 0.3s ease;
+        font-size: 25px;
+      }
+      .cont h2:hover {
+        color: #6a6a6a;
+      }
+
+      .phone-job {
+        color: #8b9890;
+        cursor: pointer;
+        transition: color 0.3s ease, transform 0.3s ease;
+      }
+      .phone-job:hover {
+        color: black;
+        transform: scale(1.1);
+      }
+
+      .img1 {
+        height: 150px;
+        width: 150px;
+        background-color: #088178;
+        border: 1px solid rgb(0, 0, 0);
+        position: absolute;
+        top: 50px;
+        right: 0px;
+        bottom: 100px;
+        background-image: url("image/home_img/p1.jpg");
+        background-size: cover;
+        background-position: center;
+        box-shadow: inset 0 0 0 10px rgb(255, 255, 255);
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+      }
+      .img1:hover {
+        filter: brightness(0.7);
+        transform: rotate(5deg) scale(1.1);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      }
+
+      .img2 {
+        height: 150px;
+        width: 150px;
+        background-color: #088178;
+        border: 1px solid black;
+        position: absolute;
+        bottom: 50px;
+        right: 0px;
+        bottom: 100px;
+        background-image: url("image/home_img/p2.jpg");
+        background-size: cover;
+        background-position: center;
+        box-shadow: inset 0 0 0 10px rgb(255, 255, 255);
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+      }
+      .img2:hover {
+        filter: brightness(0.7);
+        transform: rotate(-5deg) scale(1.1);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      }
+      
+    }
+    /* tablet */
+    @media (min-width: 601px) and (max-width: 800px) {
+      .top img {
+        display: none;
+      }
+      #nav-pop {
+        display: none;
+      }
+      .burger {
+        display: none;
+      }
+      .carrier-phone {
+        display: none;
+      }
+    }
+    /* laptop */
+    @media (min-width: 801px) and (max-width: 2000px) {
+      #b img {
+        display: none;
+      }
+      #nav-pop {
+        display: none;
+      }
+      .burger {
+        display: none;
+      }
+      .navbar ul li {
+        margin-left: 100px;
+      }
+      .carrier-phone {
+        display: none;
+      }
+    }
+  </style>
+  <body>
+    <div class="top">
+      <div class="heading">
+        <div class="burger">
+          <button id="burger-button" popovertarget="nav-pop">
+            <img src="./icons/burger_menu.png" alt="Menu" id="b" />
+          </button>
+          <div id="nav-pop" popover>
+            <ul>
+              <li>ABOUT</li>
+              <li>SERVICES</li>
+              <li>GALLERY</li>
+              <li>CONTACT</li>
+            </ul>
+          </div>
+        </div>
+        <form>
+          <label id="head">Elevate Your Events, Elevate Your Dreams...!</label>
+          <input id="search" type="text" name="name" placeholder="search..." />
+          <img src="././icons/search.png" alt="search img" id="search-icon" />
+          <img src="././icons/account.png" alt="person image" id="login" />
+        </form>
+      </div>
+    </div>
+    <!-- navbar -->
+    <div class="navbar">
+      <ul>
+        <li>ABOUT</li>
+        <li>SERVICES</li>
+        <img src="././icons/logo.png" />
+        <li>GALLERY</li>
+        <li>CONTACT</li>
+      </ul>
+    </div>
+    <div class="container-1">
+      <div class="container">
+        <img src="./image/home_img/img1.jpeg" id="img1" />
+        <img src="./image/home_img/img2.jpeg" id="img2" />
+        <img src="./image/home_img/img3.jpg" id="img3" />
+        <img src="./image/home_img/img4.jpeg" id="img4" />
+        <img src="./image/home_img/img5.jpeg" id="img5" />
+        <img src="./image/home_img/img6.jpeg" id="img6" />
+      </div>
+    </div>
+    <div class="header">
+      <pre id="H1">Elevating  Every  Occasion</pre>
+      <pre id="H2">
+Providing Curated Luxury Events for the Pacific NW & Beyond</pre
+      >
+    </div>
+    <div class="box">
+      <div class="back-img"></div>
+      <h1 id="H1">Work With Us</h1>
+      <h3 id="H3">
+        we believe that every event is an opportunity to create lasting
+        memories. We bring together creativity, precision, and dedication to
+        transform visions into unforgettable experiences. Whether it's a
+        corporate conference, a wedding, or a large-scale festival, our team
+        works tirelessly to ensure every detail is perfect. As part of our team,
+        you'll have the chance to contribute to events that make an impact and
+        leave a lasting impression.
+      </h3>
+      <div class="job">
+        <h2>
+          <i class="fa-solid fa-arrow-right" style="color: #8b9890"></i>
+          &nbsp;Event Planner
+        </h2>
+        <h2>
+          <i class="fa-solid fa-arrow-right" style="color: #8b9890"></i>
+          &nbsp;Event Coordinator
+        </h2>
+        <h2>
+          <i class="fa-solid fa-arrow-right" style="color: #8b9890"></i>
+          &nbsp;Event Marketing Specialist
+        </h2>
+        <h2>
+          <i class="fa-solid fa-arrow-right" style="color: #8b9890"></i>
+          &nbsp;Wedding Planner
+        </h2>
+        <h2>
+          <i class="fa-solid fa-arrow-right" style="color: #8b9890"></i>
+          &nbsp;Corporate Event Manager
+        </h2>
+      </div>
+      <div class="inner-box"></div>
+    </div>
+    <div class="carrier-phone">
+      <div class="cont">
+        <h1>Work With Us</h1>
+        <div class="phone-job">
+          <h2>
+            <i class="fa-solid fa-arrow-right" style="color: #8b9890"></i>
+            &nbsp;Event Coordinator
+          </h2>
+          <h2>
+            <i class="fa-solid fa-arrow-right" style="color: #8b9890"></i>
+            &nbsp;Event Marketing Specialist
+          </h2>
+          <h2>
+            <i class="fa-solid fa-arrow-right" style="color: #8b9890"></i>
+            &nbsp;Wedding Planner
+          </h2>
+          <h2>
+            <i class="fa-solid fa-arrow-right" style="color: #8b9890"></i>
+            &nbsp;Corporate Event Manager
+          </h2>
+        </div>
+      </div>
+      <div class="img1"></div>
+      <div class="img2"></div>
+    </div>
+
+    <pre>
+
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        .
+      </pre
+    >
+  </body>
+</html>
